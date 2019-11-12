@@ -1,0 +1,29 @@
+<view class="top">
+  <image src="/assets/images/bg.jpg"></image>
+  <image src="/assets/images/header.jpg" class="header"></image>
+  <view class="about">
+    <view class="my">
+      <image src="/assets/images/about.png"></image>
+      <view>关于我们</view>
+    </view>
+    <view class="like">
+      <view>{{length}}</view>
+      <view>喜欢的歌</view>
+    </view>
+  </view>
+</view>
+
+<view class="fav">喜欢</view>
+<view class="card">
+  <view class="mylove" wx:for="{{likes}}" wx:key="index">
+    <view class="zan">
+      <text class="music">音乐</text>
+      <view>
+        <image src="/assets/images/love.png"></image>
+        <text>{{item.Music.fav_nums}}</text>
+      </view>
+    </view>
+    <image src="{{item.Music.Photo.image}}" class="pic"></image>
+    <view class="bref">{{item.Music.content}}</view>
+  </view>
+</view>

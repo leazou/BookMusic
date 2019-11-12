@@ -1,0 +1,85 @@
+/* pages/books/books.wxss */
+
+.top {
+  width: 100%;
+  display: inline-block;
+}
+
+.top image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 36%;
+  top: 28rpx;
+}
+
+.search {
+  height: 70rpx;
+  margin: 20rpx 50rpx;
+  background: rgb(241, 241, 241);
+  border-radius: 50rpx;
+}
+
+input {
+  padding-left: 30rpx
+}
+
+text {
+  font-size: 35rpx;
+  color: rgb(107, 81, 11);
+  display: block;
+  text-align: center;
+  padding-top: 30rpx;
+  background: rgb(248, 248, 248);
+}
+
+.content {
+  height: 100vh;
+  background: rgb(248, 248, 248);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  width: 300rpx;
+  padding: 0 35rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.booklist {
+  margin: 50rpx 0;
+  /* width: 300rpx; */
+  height: 500rpx;
+  border: 1px solid gainsboro;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.booklist image {
+  width: 300rpx;
+  height: 400rpx;
+}
+
+.detail {
+  height: 200rpx;
+  background: white;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zan {
+  float: right;
+  font-size: 26rpx;
+  color: gray;
+  margin: 10rpx 20rpx 0 0;
+}

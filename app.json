@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/books/books",
+    "pages/detail/detail",
+    "pages/like/like",
+    "pages/test/test"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "时光书屋",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#303133",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/music2.png",
+        "selectedIconPath": "assets/images/music1.png",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "iconPath": "assets/images/book2.png",
+        "selectedIconPath": "assets/images/book1.png",
+        "text": "书单"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "iconPath": "assets/images/like2.png",
+        "selectedIconPath": "assets/images/like1.png",
+        "text": "喜欢"
+      }
+    ]
+  }
+}

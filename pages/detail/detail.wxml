@@ -1,0 +1,53 @@
+<view class="body">
+  <view class="pic">
+    <image src="{{book.Photo.image}}"></image>
+    <text class="title">{{book.title}}</text>
+    <text class="author">{{book.author}}</text>
+  </view>
+
+  <!-- <view class="comments">
+    <view style="text-align: center;font-size: 40rpx;margin-top:30rpx">短评</view>
+    <view>
+      <text style="background: rgb(255, 255, 185)">我太难了！</text>
+      <text style="background: rgb(209, 242, 255)">666</text>
+    </view>
+    <view>
+      <text>我变强了，也变秃了！</text>
+      <text>人生苦短</text>
+    </view>
+    <view>
+      <text>白嫖使我快乐</text>
+      <text>😂😂😂</text>
+    </view>
+    <view style="margin-bottom:50rpx">
+      <text>( ఠൠఠ )ﾉ</text>
+      <text style="background: rgb(253, 210, 210)">┗|｀O′|┛</text>
+      <text>ε=ε=ε=┏(゜ロ゜;)┛</text>
+    </view>
+  </view> -->
+
+  <view class="comments">
+    <view style="text-align: center;font-size: 40rpx;margin-top:30rpx">短评</view>
+    <view wx:for="{{comments}}" wx:key="index">
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+
+  <view class="bref">
+    <view style="text-align: center;font-size: 40rpx;margin:30rpx 0">内容简介</view>
+    <view style="color: rgb(63, 63, 63);text-indent: 2em">{{book.summary}}</view>
+  </view>
+
+  <view class='placeholder-view'></view>
+
+  <view class='pocket_input' style='bottom:{{height}}px;' wx:if="{{inputBoxShow}}">
+    <input type='text' placeholder-style='input-placeholder' cursor='{{cursor_position}}' class='input_style' placeholder='随便说点什么吧~(30字以内哦)' focus='{{focus}}' cursor-spacing="2" adjust-position='{{adjust_position}}' maxlength='30' bindfocus="bindfocus" bindblur="bindblur"
+      bindconfirm="bindconfirm"></input>
+    <view class="top">
+      <image src="{{liked ? yesSrc : noSrc }}" data-id='{{musicData.id}}' bindtap="onLike"></image>
+      <text class="zan">{{book.fav_nums}}</text>
+      <image src="/assets/images/share.png" ></image>
+    </view>
+  </view>
+
+</view>

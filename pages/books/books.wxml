@@ -1,0 +1,23 @@
+<!--pages/books/books.wxml-->
+<view class="body">
+
+  <view class="top">
+    <image src="/assets/images/search.png" mode='aspectFill'></image>
+    <input placeholder="                                搜索书籍" name="keyword" bindinput="searchInput" class="search"></input>
+  </view>
+
+  <text>精选</text>
+  <view class="content">
+    <view class="main" wx:for="{{books}}" wx:key="index" data-id="{{item.id}}" bindtap="detail">
+      <view class="booklist">
+        <image src="{{item.Photo.image}}"></image>
+        <view class="detail">
+          <view class="title" style="margin: 15rpx">{{item.title}}</view>
+          <view  class="title" style="color:gray;font-size:26rpx;margin-left: 20rpx">{{item.author}}</view>
+          <view class="zan">{{item.fav_nums}}喜欢</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

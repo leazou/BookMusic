@@ -1,0 +1,27 @@
+<view class="body">
+  <view class="top">
+    <image src="{{liked ? yesSrc : noSrc }}" data-id='{{musicData.id}}' bindtap="onLike"></image>
+    <text class="zan">{{musicData.fav_nums}}</text>
+    <image src="/assets/images/share.png"></image>
+  </view>
+
+  <view class="ziti">
+    <view class="main">
+      <view class="circle">
+        <image src="{{musicData.Photo.image}}" class="big {{select?'rotate':''}}"></image>
+        <view class="small">
+          <image src="{{select==true?'/assets/images/open.png':'/assets/images/stop.png'}}" data-select="false" bindtap="openTab"></image>
+        </view>
+      </view>
+    </view>
+    <view class="album">{{musicData.content}}</view>
+    <view class="bottom">
+      <!-- <image src="{{current==1?'/assets/images/left_none.png':'/assets/images/left.png'}}" class="left" bindtap="playPrev"></image> -->
+      <image src="{{nextMusic ? '/assets/images/left_none.png':'/assets/images/left.png'}}" class="left" bindtap="playPrev"></image>
+      <view>{{musicData.title}}</view>
+      <!-- <image src="{{current==total?'/assets/images/right_none.png':'/assets/images/right.png'}}" class="right" bindtap="playNext"></image> -->
+      <image src="{{nextMusic ? '/assets/images/right.png':'/assets/images/right_none.png'}}" class="right" bindtap="playNext"></image>
+    </view>
+    <text class="tap">音乐。</text>
+  </view>
+</view>

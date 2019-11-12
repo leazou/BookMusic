@@ -1,0 +1,129 @@
+/* .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+.body {
+  height: 100%;
+  width: 100%;
+}
+
+.top {
+  padding: 15rpx;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.top image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 80rpx;
+}
+
+.zan{
+  color: #ccc;
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+.ziti {
+  font-family: "DengXian Light";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  margin: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 400rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.big {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/*旋转*/
+@-webkit-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+	}
+.rotate{
+  animation: 9.5s linear 0s normal none infinite rotate;
+	/* -webkit-animation: 5s linear 0s normal none infinite rotate; */
+}
+
+.small {
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 150rpx;
+}
+
+.small image {
+  width: 30px;
+  height: 30px;
+}
+
+.album {
+  font-size: 20px;
+  margin-top: 120rpx;
+}
+
+.bottom {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(243, 243, 243);
+  margin: 200rpx 80rpx 0;
+  padding: 20rpx;
+}
+
+.bottom image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.left {
+  margin-left: 15rpx;
+}
+
+.right {
+  margin-right: 15rpx;
+}
+
+.tap {
+  margin: 0 auto;
+  height: 140px;
+  writing-mode: vertical-lr;
+  font-size: 26px;
+  position: absolute;
+  top: 500rpx;
+  left: 50rpx;
+}

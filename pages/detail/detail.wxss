@@ -1,0 +1,108 @@
+/* pages/detail/detail.wxss */
+
+.pic {
+  border-bottom: 20rpx solid rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic image {
+  margin: 40rpx 0 0;
+  width: 250rpx;
+  height: 350rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  word-wrap: break-word;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+  width: 400rpx
+}
+
+.author {
+  color: gray;
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+}
+
+.comments {
+  border-bottom: 20rpx solid rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-bottom: 20rpx
+}
+.comments view {
+  margin: 20rpx;
+}
+
+.comments text {
+  color: gray;
+  background: rgb(245, 245, 245);
+  margin: 15rpx;
+  padding: 10rpx;
+}
+
+.bref {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx;
+}
+
+.placeholder-view {
+  width: 100%;
+  height: 90rpx;
+}
+
+.pocket_input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden ;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
+  border-top: 5px solid ghostwhite
+}
+
+.input_style {
+  width: 60%;
+  margin:15rpx 30rpx;
+  font-size: 25rpx;
+  border-radius: 50rpx;
+  border: 1px solid gray;
+  padding: 15rpx;
+  float: left
+}
+
+.input-placeholder {
+  margin-left: 25rpx;
+}
+
+.top {
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.top image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.zan{
+  color: #ccc;
+
+}
